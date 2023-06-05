@@ -2,9 +2,11 @@ def arithmetic_operation(n):
     result = 0
     n = n.split()
     nums = []
+
     for item in n:
         if item.isdigit():
             nums.append(int(item))
+
     if "//" in n:
         if nums[1] == 0:
             result = -1
